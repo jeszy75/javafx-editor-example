@@ -10,7 +10,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>17</maven.compiler.release>
         <exec.mainClass>editor.Main</exec.mainClass>
-        <javafx.version>20</javafx.version>
+        <javafx.version>20.0.1</javafx.version>
         <tinylog.version>2.6.1</tinylog.version>
     </properties>
     <dependencies>
