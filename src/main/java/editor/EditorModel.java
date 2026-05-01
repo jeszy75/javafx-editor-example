@@ -43,7 +43,7 @@ public class EditorModel {
         return modified.getReadOnlyProperty();
     }
 
-    public final boolean getModified() {
+    public final boolean isModified() {
         return modified.get();
     }
 
