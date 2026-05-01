@@ -50,12 +50,12 @@ public class EditorController {
     }
 
     @FXML
-    private void onNew(ActionEvent event) {
+    private void onNew() {
        editorModel.reset();
     }
 
     @FXML
-    private void onOpen(ActionEvent event) {
+    private void onOpen() {
         var fileChooser = new FileChooser();
         fileChooser.setTitle("Open");
         var file = fileChooser.showOpenDialog(getWindow());
@@ -70,7 +70,7 @@ public class EditorController {
     }
 
     @FXML
-    private void onSave(ActionEvent event) {
+    private void onSave() {
         if (editorModel.getFilePath() != null) {
             Logger.debug("Saving file");
             try {
@@ -84,7 +84,7 @@ public class EditorController {
     }
 
     @FXML
-    private void onSaveAs(ActionEvent event) {
+    private void onSaveAs() {
         performSaveAs();
     }
 
@@ -103,7 +103,7 @@ public class EditorController {
     }
 
     @FXML
-    private void onQuit(ActionEvent event) {
+    private void onQuit() {
         Logger.info("Terminating");
         Platform.exit();
     }
